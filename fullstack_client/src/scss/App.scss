@@ -1,0 +1,129 @@
+$color1: #1b4062;
+$color2: rgb(25, 137, 193);
+$color3: #46639b;
+$notHorribleRed: rgb(116, 33, 206);
+
+@import 'BootstrapFBW36';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.main {
+  height: 100%;
+  background-color: $color3;
+  .loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    font-size: 150px;
+
+    background-color: red;
+    img {
+      position: absolute;
+      width: 100px;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+
+  .homepage {
+    section {
+      padding: 80px 20px;
+      height: 100vh;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      .left,
+      .right {
+        flex-basis: 50%;
+        padding: 20px;
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 22px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .hero {
+      background: $color1;
+      color: white;
+    }
+    .littleGuy {
+      background: $color2;
+      color: white;
+    }
+    .deer {
+      background: $color3;
+      color: white;
+    }
+  }
+
+  .dashboard {
+    background: $color3;
+    color: white;
+    height: 100%;
+    overflow: auto;
+    section {
+      height: 100%;
+      padding: 120px 20px 80px 20px;
+      display: flex;
+      flex-direction: column;
+      .todos-container {
+        max-width: 700px;
+        .todo {
+          display: flex;
+          align-items: center;
+          background-color: $color2;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          justify-content: space-between;
+          cursor: pointer;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 0.9;
+          }
+          .actions {
+            font-size: 20px;
+            svg {
+              margin-left: 10px;
+            }
+          }
+        }
+        .checked {
+          text-decoration: line-through;
+          background: #4e6eac;
+        }
+      }
+    }
+  }
+
+  .todo-info {
+    background: $color3;
+    color: white;
+    height: 100%;
+    section {
+      height: 100%;
+      padding: 120px 20px 80px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .email-verif {
+    background: $color3;
+    color: white;
+    height: 100%;
+    section {
+      height: 100%;
+      padding: 120px 20px 80px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
